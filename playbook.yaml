@@ -1,0 +1,9 @@
+---
+- name: using Lineinfile module
+  hosts: ubuntu_servers
+  tasks: 
+  - name: edit file using lineinmodule
+    lineinfile:
+      path: ~/depi_r3/lec6/file1.txt       
+      line: "ziad"
+      create: yes
